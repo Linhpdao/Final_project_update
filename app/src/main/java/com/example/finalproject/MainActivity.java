@@ -17,7 +17,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private Button resetButton;
     private Button polishButton;
-    private Button noPolishButton;
+    //private Button noPolishButton;
 
     private TextView countDown;
     private CountDownTimer countDownTimer;
