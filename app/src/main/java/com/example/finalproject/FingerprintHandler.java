@@ -68,6 +68,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
             imageView.setImageResource((R.mipmap.done));
             Intent intent = new Intent(context, OpeningActivity.class);
             context.startActivity(intent);
+            ((Activity) context).finish();
         }
     }
 }
