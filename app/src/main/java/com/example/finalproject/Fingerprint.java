@@ -26,7 +26,7 @@ public class Fingerprint extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_fingerprint);
 
         headLabel = findViewById(R.id.headLabel);
         paraLabel = findViewById(R.id.paraLabel);
@@ -49,9 +49,10 @@ public class Fingerprint extends AppCompatActivity {
                 paraLabel.setText("Permission is not granted to use Fingerprint");
             } else if (!keyguardManager.isKeyguardSecure()) {
                 paraLabel.setText("Add Lock to your phone in Settings");
-            } else if (fingerprintManager.hasEnrolledFingerprints()) {
-                paraLabel.setText("You should add at least one Fingerprint");
-            } else {
+            }
+            //else if (fingerprintManager.hasEnrolledFingerprints()) {
+                //paraLabel.setText("You should add at least one Fingerprint");}
+            else {
                 paraLabel.setText("Place your finger on Scanner to Access to the app");
 
                 FingerprintHandler fingerprintHandler = new FingerprintHandler(this);
