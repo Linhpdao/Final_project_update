@@ -90,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openOpeningScreen();
-                //mHandler.postDelayed(cRunnable, 1000);
-                //imageView.setImageResource(images[1]);
+                //Intent intent = new Intent(MainActivity.this, Fingerprint.class);
+                //startActivity(intent);
             }
         }));
 
