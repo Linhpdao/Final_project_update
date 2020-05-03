@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void openOpeningScreen() {
-        Intent intent = new Intent(this, OpeningActivity.class);
+        Intent intent = new Intent(this, Fingerprint.class);
         startActivity(intent);
     }
 
