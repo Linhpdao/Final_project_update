@@ -215,6 +215,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+
     public void alarm() {
         String message = "Time to cut your toenails !!";
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
